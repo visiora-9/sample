@@ -1,0 +1,458 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="description" content="Visiora - Innovative Digital Agency specializing in creative solutions">
+    <title>Visiora | Creative Digital Agency</title>
+    
+    <!-- Favicon -->
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&family=Open+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/hero-fix.css">
+    <link rel="stylesheet" href="css/cleanup.css">
+    
+    <!-- Core JavaScript -->
+    <script defer src="js/main.js"></script>
+    
+    <!-- Animation libraries (loaded conditionally by main.js) -->
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+</head>
+<body>
+    <!-- Preloader -->
+    <div class="preloader">
+        <div class="preloader-content">
+            <div class="loader-logo">
+                <img src="img/visiora_logo.png" alt="Visiora Logo" class="logo-image">
+                <span>VISIORA</span>
+            </div>
+            <div class="loader-progress-container">
+                <div class="loader-progress"></div>
+            </div>
+            <div class="loader-counter"><span class="counter-number">0</span><span class="counter-percent">%</span></div>
+        </div>
+    </div>
+    
+    <!-- Main navigation -->
+    <header class="site-header">
+        <div class="header-inner container">
+            <div class="logo">
+                <a href="/">
+                    <img src="img/visiora_logo.png" alt="Visiora" class="logo-image" />
+                    <span style="display: none;">VISIORA</span>
+                </a>
+            </div>
+            
+            <nav class="main-nav">
+                <ul class="nav-list">
+                    <li class="nav-item"><a href="#hero" class="nav-link" data-text="Home">Home</a></li>
+                    <li class="nav-item"><a href="#about" class="nav-link" data-text="About">About</a></li>
+                    <li class="nav-item"><a href="#work" class="nav-link" data-text="Work">Work</a></li>
+                    <li class="nav-item"><a href="#services" class="nav-link" data-text="Services">Services</a></li>
+                    <li class="nav-item"><a href="#contact" class="nav-link" data-text="Contact">Contact</a></li>
+                </ul>
+            </nav>
+            
+            <button class="menu-toggle" aria-label="Toggle navigation menu">
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </button>
+        </div>
+    </header>
+    
+    <!-- Mobile menu -->
+    <div class="mobile-menu">
+        <div class="mobile-menu-bg"></div>
+        <div class="mobile-menu-content">
+            <ul class="mobile-nav-list">
+                <li class="mobile-nav-item"><a href="#hero" class="mobile-nav-link">Home</a></li>
+                <li class="mobile-nav-item"><a href="#about" class="mobile-nav-link">About</a></li>
+                <li class="mobile-nav-item"><a href="#work" class="mobile-nav-link">Work</a></li>
+                <li class="mobile-nav-item"><a href="#services" class="mobile-nav-link">Services</a></li>
+                <li class="mobile-nav-item"><a href="#contact" class="mobile-nav-link">Contact</a></li>
+            </ul>
+            <div class="mobile-menu-footer">
+                <div class="social-links">
+                    <a href="#" class="social-link" aria-label="Instagram">Instagram</a>
+                    <a href="#" class="social-link" aria-label="Twitter">Twitter</a>
+                    <a href="#" class="social-link" aria-label="LinkedIn">LinkedIn</a>
+                </div>
+                <div class="mobile-contact">
+                    <a href="mailto:hello@visiora.com">hello@visiora.com</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <main class="main-content">
+        <!-- Hero section -->
+        <section id="hero" class="hero-section">
+            <div class="hero-bg">
+                <div class="hero-particles"></div>
+                <div class="hero-gradient"></div>
+            </div>
+            <div class="container">
+                <div class="hero-content">
+                    <h1 class="hero-title split-text">
+                        <span class="line">We create</span>
+                        <span class="line">digital</span>
+                        <span class="line">experiences</span>
+                        <span class="line">that <mark>matters</mark></span>
+                    </h1>
+                    <p class="hero-description split-text">
+                        A forward-thinking digital agency crafting immersive experiences 
+                        and innovative solutions for brands that want to stand out.
+                    </p>
+                    <div class="hero-cta">
+                        <a href="#work" class="btn-primary" id="workBtn" onclick="document.getElementById('work').scrollIntoView({behavior:'smooth', block:'start'}); return false;">View our work</a>
+                        <a href="#contact" class="btn-secondary" id="contactBtn" onclick="document.getElementById('contact').scrollIntoView({behavior:'smooth', block:'start'}); return false;">Get in touch</a>
+                    </div>
+                </div>
+                <div class="hero-scroll">
+                    <div class="scroll-indicator">
+                        <div class="scroll-line"></div>
+                        <span class="scroll-text">Scroll</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- About section -->
+        <section id="about" class="about-section">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">About Us</h2>
+                    <p class="section-subtitle">WHO WE ARE</p>
+                </div>
+                <div class="about-content">
+                    <div class="about-text">
+                        <p class="large-text">We create digital experiences that blend creativity and technology to help brands thrive in the digital age.</p>
+                        <div class="body-text">
+                            <p>At Visiora, we believe that exceptional digital experiences are built at the intersection of design and technology. Our team of strategists, designers, and developers work together to create solutions that not only look beautiful but also drive results.</p>
+                            <p>Founded with a passion for innovation, we've grown into a full-service digital agency with expertise across multiple disciplines. We take pride in our collaborative approach, working closely with our clients to understand their unique challenges and opportunities.</p>
+                        </div>
+                        <a href="#contact" class="btn-primary">Get in touch</a>
+                    </div>
+                    <div class="about-image">
+                        <div class="image-container">
+                            <div class="about-img-1 img-hover-reveal">
+                                <div class="img-hover-reveal-inner">
+                                    <img src="img/about_us.png" alt="Our team working" class="lazy-image">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Work section -->
+        <section id="work" class="work-section">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title split-text">Our Work</h2>
+                    <p class="section-subtitle">Selected Projects</p>
+                </div>
+                <div class="work-filter">
+                    <button class="filter-button active" data-filter="all">All</button>
+                    <button class="filter-button" data-filter="branding">Branding</button>
+                    <button class="filter-button" data-filter="web">Web</button>
+                    <button class="filter-button" data-filter="ux">UX/UI</button>
+                    <button class="filter-button" data-filter="digital">Digital</button>
+                    <button class="filter-button" data-filter="animation">Animation</button>
+                </div>
+                <div class="work-grid">
+                    <!-- Web Category Project 1 (Video) -->
+                    <div class="work-item" data-category="web all">
+                        <a href="#" class="work-link">
+                            <div class="work-image">
+                                <!-- Video with poster image -->
+                                <video poster="img/work-01.png" muted loop>
+                                    <source src="videos/work-01.mp4" type="video/mp4">
+                                    <!-- Fallback image if video cannot be played -->
+                                    <img src="img/work-01.png" alt="Web Video Project 1" class="lazy-image">
+                                </video>
+                            </div>
+                            <div class="work-overlay">
+                                <div class="work-details">
+                                    <h3 class="work-title">ClothCult</h3>
+                                    <p class="work-category">Web Design</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    
+                    <!-- Web Category Project 2 (Video) -->
+                    <div class="work-item" data-category="web all">
+                        <a href="#" class="work-link">
+                            <div class="work-image">
+                                <!-- Video with poster image -->
+                                <video poster="img/work-02.png" muted loop>
+                                    <source src="videos/work-02.mp4" type="video/mp4">
+                                    <!-- Fallback image if video cannot be played -->
+                                    <img src="img/work-02.png" alt="Web Video Project 2" class="lazy-image">
+                                </video>
+                            </div>
+                            <div class="work-overlay">
+                                <div class="work-details">
+                                    <h3 class="work-title">BCA Courses Wala</h3>
+                                    <p class="work-category">Web Development</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    
+                    <!-- Web Category Project 3 (Video) -->
+                    <div class="work-item" data-category="web all">
+                        <a href="#" class="work-link">
+                            <div class="work-image">
+                                <!-- Video with poster image -->
+                                <video poster="img/work-03.png" muted loop>
+                                    <source src="videos/work-03.mp4" type="video/mp4">
+                                    <!-- Fallback image if video cannot be played -->
+                                    <img src="img/work-03.png" alt="Web Video Project 3" class="lazy-image">
+                                </video>
+                            </div>
+                            <div class="work-overlay">
+                                <div class="work-details">
+                                    <h3 class="work-title">Carter Watches</h3>
+                                    <p class="work-category">Web Development</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    
+                    <!-- Under Progress Text Messages for other categories -->
+                    <div class="work-item text-only" data-category="branding">
+                        <div class="progress-message">
+                            <h3>Under Progress</h3>
+                            <p>Coming Soon</p>
+                        </div>
+                    </div>
+                    
+                    <div class="work-item text-only" data-category="ux">
+                        <div class="progress-message">
+                            <h3>Under Progress</h3>
+                            <p>Coming Soon</p>
+                        </div>
+                    </div>
+                    
+                    <div class="work-item text-only" data-category="digital">
+                        <div class="progress-message">
+                            <h3>Under Progress</h3>
+                            <p>Coming Soon</p>
+                        </div>
+                    </div>
+                    
+                    <div class="work-item text-only" data-category="animation">
+                        <div class="progress-message">
+                            <h3>Under Progress</h3>
+                            <p>Coming Soon</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="work-more">
+                    <a href="#" class="btn-tertiary">View all projects</a>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Services section -->
+        <section id="services" class="services-section">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title split-text">Our Services</h2>
+                    <p class="section-subtitle">What We Do</p>
+                </div>
+                <div class="services-grid">
+                    <div class="service-item">
+                        <div class="service-icon">
+                            <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M12 21C16.9706 21 21 16.9706 21 12C21 7.02944 16.9706 3 12 3C7.02944 3 3 7.02944 3 12C3 16.9706 7.02944 21 12 21Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M12 8V12L15 15" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </div>
+                        <h3 class="service-title">Web Design & Development</h3>
+                        <p class="service-description">
+                            We create beautiful, functional websites that deliver exceptional user experiences
+                            and drive business growth.
+                        </p>
+                        <a href="#" class="service-link">Learn more</a>
+                    </div>
+                    <div class="service-item">
+                        <div class="service-icon">
+                            <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M2 9.45455V14.5455M9 4.95455V19.0455M16 4.95455V19.0455M23 9.45455V14.5455" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </div>
+                        <h3 class="service-title">Branding & Identity</h3>
+                        <p class="service-description">
+                            We help brands discover and express their unique voice through
+                            strategic branding and visual identity.
+                        </p>
+                        <a href="#" class="service-link">Learn more</a>
+                    </div>
+                    <div class="service-item">
+                        <div class="service-icon">
+                            <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M8 3H5.5C4.39543 3 3.5 3.89543 3.5 5V19C3.5 20.1046 4.39543 21 5.5 21H8M8 3H19C20.1046 3 21 3.89543 21 5V19C21 20.1046 20.1046 21 19 21H8M8 3V21" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M15 9L10 14L8 12" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </div>
+                        <h3 class="service-title">UX/UI Design</h3>
+                        <p class="service-description">
+                            We design interfaces that are not only visually appealing but also
+                            intuitive, accessible, and effective.
+                        </p>
+                        <a href="#" class="service-link">Learn more</a>
+                    </div>
+                    <div class="service-item">
+                        <div class="service-icon">
+                            <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M12 2L2 7L12 12L22 7L12 2Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M2 17L12 22L22 17" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M2 12L12 17L22 12" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </div>
+                        <h3 class="service-title">Digital Marketing</h3>
+                        <p class="service-description">
+                            We help brands reach and engage their target audience through
+                            strategic digital marketing campaigns.
+                        </p>
+                        <a href="#" class="service-link">Learn more</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Contact section -->
+        <section id="contact" class="contact-section">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title split-text">Get in Touch</h2>
+                    <p class="section-subtitle">Start a Project</p>
+                </div>
+                <div class="contact-content">
+                    <div class="contact-info">
+                        <div class="contact-text">
+                            <p class="large-text split-text">
+                                Ready to bring your ideas to life? Let's create something amazing together.
+                            </p>
+                            <div class="contact-details">
+                                <div class="contact-item">
+                                    <h4>Email</h4>
+                                    <a href="mailto:visiora29@gmail.com" class="contact-link">visiora29@gmail.com</a>
+                                </div>
+                                <div class="contact-item">
+                                    <h4>Phone</h4>
+                                    <a href="tel:+11234567890" class="contact-link">+91 9109852870</a>
+                                </div>
+                                
+                            </div>
+                            <div class="social-links">
+                                <a href="#" class="social-link" aria-label="Instagram">Instagram</a>
+                                
+                                <a href="#" class="social-link" aria-label="LinkedIn">LinkedIn</a>
+                                
+                            </div>
+                        </div>
+                    </div>
+                    <div class="contact-form-container">
+                        <form class="contact-form" id="contactForm">
+                            <div class="form-group">
+                                <label for="name" class="form-label">Name</label>
+                                <input type="text" id="name" name="name" class="form-input" required>
+                                <div class="input-line"></div>
+                            </div>
+                            <div class="form-group">
+                                <label for="email" class="form-label">Email</label>
+                                <input type="email" id="email" name="email" class="form-input" required>
+                                <div class="input-line"></div>
+                            </div>
+                            <div class="form-group">
+                                <label for="subject" class="form-label">Subject</label>
+                                <input type="text" id="subject" name="subject" class="form-input" required>
+                                <div class="input-line"></div>
+                            </div>
+                            <div class="form-group">
+                                <label for="message" class="form-label">Message</label>
+                                <textarea id="message" name="message" class="form-input" rows="4" required></textarea>
+                                <div class="input-line"></div>
+                            </div>
+                            <div class="form-submit">
+                                <button type="submit" class="btn-primary">Send Message</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    
+    <!-- Footer -->
+    <footer class="site-footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-branding">
+                    <div class="footer-logo">
+                        <img src="img/visiora_logo.png" alt="Visiora Logo" class="logo-image">
+                        <span>VISIORA</span>
+                    </div>
+                    <p class="footer-tagline">Creating digital experiences that matter.</p>
+                </div>
+                <div class="footer-nav">
+                    <div class="footer-nav-group">
+                        <h4 class="footer-heading">Navigation</h4>
+                        <ul class="footer-links">
+                            <li><a href="#hero">Home</a></li>
+                            <li><a href="#about">About</a></li>
+                            <li><a href="#work">Work</a></li>
+                            <li><a href="#services">Services</a></li>
+                            <li><a href="#contact">Contact</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-nav-group">
+                        <h4 class="footer-heading">Services</h4>
+                        <ul class="footer-links">
+                            <li><a href="#">Web Design</a></li>
+                            <li><a href="#">Branding</a></li>
+                            <li><a href="#">UX/UI Design</a></li>
+                            <li><a href="#">Digital Marketing</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-nav-group">
+                        <h4 class="footer-heading">Legal</h4>
+                        <ul class="footer-links">
+                            <li><a href="#">Privacy Policy</a></li>
+                            <li><a href="#">Terms of Service</a></li>
+                            <li><a href="#">Cookie Policy</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p class="copyright">© 2025 Visiora. All rights reserved.</p>
+                <div class="social-links">
+                    <a href="https://www.instagram.com/visiora_29/?utm_source=ig_web_button_share_sheet" target="_blank" class="social-link" aria-label="Instagram">Instagram</a>
+                    
+                    <a href="#" class="social-link" aria-label="LinkedIn">LinkedIn</a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bg">
+            <div class="footer-line"></div>
+        </div>
+    </footer>
+</body>
+</html> 

@@ -1,0 +1,60 @@
+/* Desktop Navigation Fix
+-------------------------------------------------- */
+@media (min-width: 768px) {
+  .main-nav {
+    display: block !important;
+  }
+  
+  .nav-list {
+    display: flex !important;
+    flex-direction: row !important;
+    align-items: center !important;
+    justify-content: flex-end !important;
+    gap: 2rem !important;
+  }
+  
+  .nav-item {
+    margin: 0 !important;
+    display: inline-block !important;
+  }
+  
+  .nav-link {
+    padding: 0.5rem 0 !important;
+    display: inline-block !important;
+  }
+  
+  .site-header {
+    height: 80px !important;
+  }
+  
+  .logo {
+    margin-right: auto !important;
+  }
+  
+  .header-inner {
+    display: flex !important;
+    flex-direction: row !important;
+    align-items: center !important;
+    justify-content: space-between !important;
+  }
+}
+
+/* Mobile Navigation
+-------------------------------------------------- */
+@media (max-width: 767px) {
+  .main-nav {
+    display: none !important;
+  }
+  
+  .logo {
+    transform: scale(1.25) !important;
+    transform-origin: left center !important;
+    margin-left: -8px !important;
+    margin-top: 2px !important;
+  }
+  
+  .logo-image {
+    width: 100% !important;
+    height: 100% !important;
+  }
+} 
